@@ -1054,8 +1054,8 @@ body.modal-open {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%) scale(1) rotate(0);
-  width: 450px;
-  height: 609px;
+  width: 320px;
+  height: 550px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1069,6 +1069,12 @@ body.modal-open {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(3) rotate(360deg);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1127,12 +1133,17 @@ body.modal-open {
 }
 
 .input {
-  width: 370px;
+  width: 95%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .input {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .input {
