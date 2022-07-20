@@ -1,0 +1,46 @@
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.features__icon-bg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: var(--team-bgr-color);
+  border: transparent;
+  border-radius: 4px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+}
+
+.features__item {
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+
+  .features__title {
+    @include font(14px, 700, 1.14, null);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      text-align: start;
+    }
+  }
+
+  .features__text {
+    line-height: 1.71;
+    color: var(--text-font-color);
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+  }
+}

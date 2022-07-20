@@ -1,0 +1,21 @@
+@import "./utils/placeholders";
+@import "./utils/vars";
+@import "./utils/utils";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/common";
+
+@import "./components/container";
+@import "./components/btn";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/strength";
+@import "./layout/specification";
+@import "./layout/team";
+@import "./layout/our-clients";
+@import "./layout/footer";
+
+@import "./layout/portfolio";
+@import "./components/modal-window";

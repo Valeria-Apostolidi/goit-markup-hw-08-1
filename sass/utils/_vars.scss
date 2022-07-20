@@ -1,0 +1,22 @@
+:root {
+  --add-color: #2f303a;
+  --accent-color: #2196f3;
+  --add-font-color: #ffffff;
+  --main-font-color: #212121;
+  --text-font-color: #757575;
+  --team-bgr-color: #f5f4fa;
+  --logo-color: #000000;
+  --focus-color: #188ce8;
+  --header-border: #ececec;
+  --portfolio-borders: #eeeeee;
+  --icon-color: #afb1b8;
+  --footer-icon-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-font-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--add-font-color);
+}
