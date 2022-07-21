@@ -88,6 +88,11 @@ body.modal-open {
   margin-bottom: 50px;
   text-align: center;
 }
+@media screen and (max-width: 1200px) {
+  .heading {
+    font-size: 28px;
+  }
+}
 
 .container {
   margin-left: auto;
@@ -169,6 +174,12 @@ body.modal-open {
   color: var(--logo-color);
   padding-top: 16px;
   padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .logo__word--color {
@@ -443,7 +454,7 @@ body.modal-open {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  transform: translateY(33px);
+  transform: translateY(44px);
 }
 
 .hero {
@@ -804,6 +815,10 @@ body.modal-open {
   }
 }
 
+.address-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .contacts-link {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1050,17 +1065,22 @@ body.modal-open {
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%) scale(1) rotate(0);
   width: 320px;
-  height: 550px;
+  height: 600px;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 450ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+  }
 }
 @media screen and (min-width: 767px) {
   .modal {

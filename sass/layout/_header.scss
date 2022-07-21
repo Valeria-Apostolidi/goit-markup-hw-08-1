@@ -32,6 +32,10 @@
   color: var(--logo-color);
   padding-top: 16px;
   padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .logo__word--color {
@@ -291,5 +295,5 @@
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-  transform: translateY(33px);
+  transform: translateY(44px);
 }
