@@ -176,6 +176,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 480px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+    justify-content: flex-start;
+  }
 }
 
 .checkbox-wrap {

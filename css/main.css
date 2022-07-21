@@ -1218,6 +1218,18 @@ body.modal-open {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .checkbox-label {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .checkbox-label {
+    font-size: 12px;
+    justify-content: flex-start;
+  }
 }
 
 .checkbox-wrap {
